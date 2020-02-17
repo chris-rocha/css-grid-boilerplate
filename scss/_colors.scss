@@ -1,9 +1,13 @@
 .color {
   &.white { color: white; }
+  &.primary { color: $primary; }
+  &.secondary { color: $secondary; }
 }
 
 .fill {
   &.white { background-color: white; }
+  &.primary { background-color: $primary; }
+  &.secondary { background-color: $secondary; }
 }
 
 // styleguide color swatches
@@ -11,11 +15,10 @@
   .swatches {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 120px 120px 120px;
+    grid-template-rows: 120px;
     grid-gap: $fontSize / 2;
-    grid-template-areas: "s1 s2 s3 s4 s5 s6"
-                          "s7 s8 s9 s10 s11 s12"
-                          "s13 s14 s15 s16 s17 s18";
+    grid-template-areas: "s1 s2 s3 s4 s5 s6";
+    margin-bottom: $fontSize;
   }
 }
 .swatch {

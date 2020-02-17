@@ -14,7 +14,7 @@ scss.compiler = require('node-sass');
 gulp.task('styles', function() {
   'use strict';
   return gulp.src(paths.sass)
-    .pipe(scss().on('error', scss.logError))
+    .pipe(scss({outputStyle: 'compressed'}).on('error', scss.logError))
     .pipe(autoprefixer({
       overrideBrowserslist: [
         'last 2 version',

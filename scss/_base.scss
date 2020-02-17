@@ -267,7 +267,7 @@ input[type="button"] {
   appearance: none;
   background-color: rgba($secondary, 0);
   border: $formBorderWidth solid $secondary;
-  border-radius: $fontSize;
+  border-radius: 0;
   color: $secondary;
   display: inline-block;
   font: {
@@ -309,7 +309,6 @@ input[type="button"] {
     font-size: $fontSize - 5;
   }
   &.larger {
-    border-radius: $fontSize * 1.5;
     font-size: 1.5em;
   }
 }
