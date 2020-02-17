@@ -8,20 +8,20 @@ $secondary: #666;
 $borderWidth: 1px;
 $formBorderWidth: 0.5px;
 $formFieldWidth: 280px;
-$formBorderColor: tint($stone, 70%);
+$formBorderColor: black;
 
 // $inputHeight: 34px;
 
 // background vars
-$backgroundColor: $beige; //white; // default background information
+$backgroundColor: white; // default background information
 
 // font vars
 $fontSize: 18px; // default font size. Change here will adjust sizes across the board.
 $fontFamily: serif; // default fonts
-$fontColor: $stone; // default font color
+$fontColor: black; // default font color
 $boldFamily: $fontFamily;
 $fontWeight: normal;
-$boldWeight: 600;
+$boldWeight: bold;
 
 $iconFamily: 'Font Awesome 5 Free', 'Fontawesome';
 
@@ -32,6 +32,7 @@ $linkDecoration: underline; // default link decoration
 
 // heading vars
 $headingFamily: sans-serif; // default heading font
+$headingColor: $primary;
 
 // form vars
 $formFont: $headingFamily; // default form font
