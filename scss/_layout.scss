@@ -1,0 +1,47 @@
+@import "colors";
+@import "styleguide";
+
+body {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:  "header"
+                        "content"
+                        "footer";
+}
+
+.max-width {
+  display: grid;
+  grid-template-areas:  ". container .";
+}
+
+// autoprefixer works when template rows and columns are declared in the same block, thus we must repeat the rows declaration
+.max-width {
+  grid-template-rows: auto;
+  grid-template-columns: minmax($mobileMargins, 1fr) minmax(0, $desktopWidth) minmax($mobileMargins, 1fr);
+}
+
+// generic nested container for wrappers above
+.container {
+  grid-area: container;
+}
+
+#header {
+  grid-area: header;
+}
+
+#content {
+  grid-area: content;
+}
+
+
+#footer {
+  grid-area: footer;
+}
+
+// ie support
+.max-wide {
+  -ms-grid-columns: 1fr $desktopWidth 1fr;
+}
+
+

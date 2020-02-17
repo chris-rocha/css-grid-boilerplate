@@ -1,0 +1,50 @@
+// GLOBAL VARIABLES - include your variables here or alter the predefined vars
+
+// Primary
+$warning: "red";
+$primary: #333;
+$secondary: #666;
+
+$borderWidth: 1px;
+$formBorderWidth: 0.5px;
+$formFieldWidth: 280px;
+$formBorderColor: tint($stone, 70%);
+
+// $inputHeight: 34px;
+
+// background vars
+$backgroundColor: $beige; //white; // default background information
+
+// font vars
+$fontSize: 18px; // default font size. Change here will adjust sizes across the board.
+$fontFamily: serif; // default fonts
+$fontColor: $stone; // default font color
+$boldFamily: $fontFamily;
+$fontWeight: normal;
+$boldWeight: 600;
+
+$iconFamily: 'Font Awesome 5 Free', 'Fontawesome';
+
+// link vars
+$linkColor: $primary; // default link INERT color
+$linkHoverColor: $secondary; // default link HOVER color
+$linkDecoration: underline; // default link decoration
+
+// heading vars
+$headingFamily: sans-serif; // default heading font
+
+// form vars
+$formFont: $headingFamily; // default form font
+
+$mobileMargins: 7%;
+
+// media query dimensions
+$tenEightyWidth: 1900px;
+$desktopLgWidth: 1280px;
+$desktopWidth: 960px;
+$sixupSm: 565px;
+$sixupMd: 1086px;
+$tabletWidth: 800px; //768px;
+$mobilePortraitWidth: 300px;
+$mobileLandscapeWidth: 565px;
+$mobileMenuPoint: 960px;
